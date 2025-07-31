@@ -5,8 +5,7 @@
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
 ## 🔬 Overview
-
-A deep learning framework for histopathological image classification that introduces **learnable preprocessing** and **custom neural architectures** to advance cancer detection accuracy. This project addresses critical limitations in current state-of-the-art models by incorporating adaptive preprocessing techniques and attention mechanisms specifically designed for medical imaging.
+This project was developed as part of our Machine Learning & AI course at BUET (EEE 402, July 2025). It focuses on improving diagnostic accuracy in histopathological images using advanced deep learning techniques. It involves a deep learning framework for histopathological image classification that introduces **learnable preprocessing** and **custom neural architectures** to advance cancer detection accuracy. This project addresses critical limitations in current state-of-the-art models by incorporating adaptive preprocessing techniques and attention mechanisms specifically designed for medical imaging.
 
 ## 🎯 Key Features
 
