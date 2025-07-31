@@ -15,23 +15,6 @@ This project was developed as part of our Machine Learning & AI course at BUET (
 - **Explainable AI Integration**: Grad-CAM and SHAP visualizations for model interpretability
 - **Comprehensive Evaluation**: Comparison with ResNet-50, EfficientNet-B0, DenseNet-121, and Vision Transformer
 
-## 🏆 Performance Highlights
-
-- **96% Scaled Accuracy** on 2,000-image subset with HistPathNet
-- **2-3% improvement** over baseline models in single-epoch training
-- **10-20% performance boost** from learnable preprocessing components
-- **Superior AUROC of 0.96** demonstrating excellent classification reliability
-
-## 📊 Results Comparison
-
-| Method | Scaled Accuracy | Scaled F1-Score | Scaled AUROC | Key Features |
-|--------|----------------|----------------|--------------|--------------|
-| **HistPathNet (Custom)** | **0.9000** | **0.9000** | **0.9600** | CBAM attention, dual segmentation-classification |
-| ResNet-50 | 0.9612 | 0.9432 | 0.9448 | Pre-trained residual network, 4-channel input |
-| EfficientNet-B0 | 0.9480 | 0.9300 | 0.9320 | Lightweight, compound-scaled |
-| DenseNet-121 | 0.9400 | 0.9200 | 0.9240 | Dense connectivity |
-| ViT-B/16 | 0.9300 | 0.9100 | 0.9160 | Transformer-based |
-
 ## 🧬 Dataset
 
 - **Source**: Kaggle Histopathological Image Dataset
@@ -51,6 +34,38 @@ This project was developed as part of our Machine Learning & AI course at BUET (
 - CBAM (Convolutional Block Attention Module) integration
 - Dual-task learning for segmentation and classification
 - Skip connections for enhanced feature propagation
+- 
+## 🏆 Performance Highlights
+
+- **96% Scaled Accuracy** on 2,000-image subset with HistPathNet
+- **2-3% improvement** over baseline models in single-epoch training
+- **10-20% performance boost** from learnable preprocessing components
+- **Superior AUROC of 0.96** demonstrating excellent classification reliability
+
+## 📊 Results Comparison
+
+| Method | Scaled Accuracy | Scaled F1-Score | Scaled AUROC | Key Features |
+|--------|----------------|----------------|--------------|--------------|
+| **HistPathNet (Custom)** | **0.9000** | **0.9000** | **0.9600** | CBAM attention, dual segmentation-classification |
+| ResNet-50 | 0.9612 | 0.9432 | 0.9448 | Pre-trained residual network, 4-channel input |
+| EfficientNet-B0 | 0.9480 | 0.9300 | 0.9320 | Lightweight, compound-scaled |
+| DenseNet-121 | 0.9400 | 0.9200 | 0.9240 | Dense connectivity |
+| ViT-B/16 | 0.9300 | 0.9100 | 0.9160 | Transformer-based |
+
+## 🔍 Explainable AI
+
+The framework includes comprehensive XAI tools:
+- **Grad-CAM**: Visual attention maps highlighting disease-relevant regions
+- **SHAP**: Feature importance analysis for model decisions
+- **Ablation Studies**: Component-wise performance analysis
+
+## 📈 Ablation Study Results
+
+| Preprocessing Condition | Scaled Accuracy | Scaled F1-Score | Scaled AUROC |
+|-------------------------|----------------|----------------|--------------|
+| **Full Learnable** | **0.9000** | **0.9000** | **0.9600** |
+| Fixed Preprocessing | 0.8200 | 0.8000 | 0.9500 |
+| No Preprocessing | 0.7000 | 0.7000 | 0.9300 |
 
 ## 🚀 Quick Start
 
@@ -86,21 +101,6 @@ python visualize.py --method gradcam --input-image sample.png
 - seaborn
 - pandas
 - numpy
-
-## 🔍 Explainable AI
-
-The framework includes comprehensive XAI tools:
-- **Grad-CAM**: Visual attention maps highlighting disease-relevant regions
-- **SHAP**: Feature importance analysis for model decisions
-- **Ablation Studies**: Component-wise performance analysis
-
-## 📈 Ablation Study Results
-
-| Preprocessing Condition | Scaled Accuracy | Scaled F1-Score | Scaled AUROC |
-|-------------------------|----------------|----------------|--------------|
-| **Full Learnable** | **0.9000** | **0.9000** | **0.9600** |
-| Fixed Preprocessing | 0.8200 | 0.8000 | 0.9500 |
-| No Preprocessing | 0.7000 | 0.7000 | 0.9300 |
 
 ## 🎓 Academic Context
 
