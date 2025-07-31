@@ -11,16 +11,6 @@ This project was developed as part of our Machine Learning & AI course at BUET (
   - Custom CNN model (HistPathNet) with CBAM attention
   - Comparative evaluation with ResNet-50, EfficientNet-B0, DenseNet-121, and Vision Transformer
 
-## 📊 Results
-
-| Model             | Accuracy | F1 Score | AUROC  |
-|------------------|----------|----------|--------|
-| ResNet-50        | 96.12%   | 0.9432   | 0.9448 |
-| EfficientNet-B0  | 94.80%   | 0.9300   | 0.9320 |
-| DenseNet-121     | 94.00%   | 0.9200   | 0.9240 |
-| Vision Transformer | 93.00% | 0.9100   | 0.9160 |
-| **HistPathNet** (Ours) | **90.00%** | **0.9000** | **0.9600** |
-
 ## 🧠 Model Architecture
 
 HistPathNet is a U-Net-inspired architecture enhanced with CBAM attention modules and dual output heads for segmentation and classification.
@@ -30,3 +20,13 @@ HistPathNet is a U-Net-inspired architecture enhanced with CBAM attention module
 - **Name**: [Lung and Colon Cancer Histopathological Images](https://www.kaggle.com/datasets/ambarish/lung-colon-cancer-histopathological-images)
 - 25,000 images, 5 classes
 - We used a sampled, balanced subset of 2,000 images
+
+## 📊 Results
+
+| Model             | Accuracy | F1 Score | AUROC  |
+|------------------|----------|----------|--------|
+| ResNet-50        | 96.12%   | 0.9432   | 0.9448 |
+| EfficientNet-B0  | 94.80%   | 0.9300   | 0.9320 |
+| DenseNet-121     | 94.00%   | 0.9200   | 0.9240 |
+| Vision Transformer | 93.00% | 0.9100   | 0.9160 |
+| **HistPathNet** (Ours) | **90.00%** | **0.9000** | **0.9600** |
