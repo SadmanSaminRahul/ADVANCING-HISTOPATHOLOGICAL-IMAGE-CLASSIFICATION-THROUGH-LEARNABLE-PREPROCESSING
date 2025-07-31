@@ -7,7 +7,7 @@ This project applies U-Net and ResNet architectures on histopathological images 
 ## Features
 - Macenko stain normalization
 - U-Net nuclei segmentation
-- ResNet-50, EfficientNet-B0 comparisons
+- ResNet-50, EfficientNet-B0 etc comparisons
 - Custom HistPathNet model
 
 ## Getting Started
